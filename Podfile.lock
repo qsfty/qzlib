@@ -6,22 +6,19 @@ PODS:
     - CleanJSON (~> 1.0.8)
 
 DEPENDENCIES:
-  - QzLib (from `/Users/qiangzi/Work/2021/ios/lib/qzlib`)
+  - QzLib
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - CleanJSON
-
-EXTERNAL SOURCES:
-  QzLib:
-    :path: "/Users/qiangzi/Work/2021/ios/lib/qzlib"
+    - QzLib
 
 SPEC CHECKSUMS:
   Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
   CleanJSON: 910a36465ce4829e264a902ccf6d1455fdd9f980
   QzLib: c9397706bafc7f0b4477c46a419ae36566607e95
 
-PODFILE CHECKSUM: 9c3d0b567c92d5c26b10681a2db77a52d4e9f7ca
+PODFILE CHECKSUM: 89679a09689db29ea63bb848093b9e07f1def6d9
 
 COCOAPODS: 1.10.1
