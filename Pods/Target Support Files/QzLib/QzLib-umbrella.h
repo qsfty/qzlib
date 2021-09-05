@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double QzUIVersionNumber;
-FOUNDATION_EXPORT const unsigned char QzUIVersionString[];
+FOUNDATION_EXPORT double QzLibVersionNumber;
+FOUNDATION_EXPORT const unsigned char QzLibVersionString[];
 

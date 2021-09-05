@@ -1,0 +1,6 @@
+framework module QzLib {
+  umbrella header "QzLib-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -12,7 +12,6 @@
 		1257742D078BAB8C3B995D0A /* MyJsonUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12577D3EBF18C1A283D95D9C /* MyJsonUtil.swift */; };
 		12577524756046D08F969804 /* MyRequestUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125778A94A3B96A466B2FD9B /* MyRequestUtil.swift */; };
 		125775761E93E7DBD2DEAA3A /* MyColorUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125776169334D52A5198699A /* MyColorUtil.swift */; };
-		12577632FF454E7A231C4E4F /* MyEnvUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12577D1851949D1E2E60D9BE /* MyEnvUtil.swift */; };
 		125776DDDF342BE7484D2BCB /* HttpUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12577989E971F2CA07548578 /* HttpUtil.swift */; };
 		1257774965250F171219FECC /* MyNumberUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125770E9D89660B6F10585C8 /* MyNumberUtil.swift */; };
 		125778D6D7CA090AB95E5D82 /* MyTimerUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1257752A8A611079F1305034 /* MyTimerUtil.swift */; };
@@ -20,7 +19,6 @@
 		125779EBDCFFD90C8CD6CFCF /* BmobApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12577F831B855C31A1F2A6F5 /* BmobApi.swift */; };
 		12577A1448FAD4D600AD07F2 /* MyCacheUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125777827122C8107564BE4A /* MyCacheUtil.swift */; };
 		12577B55EF9019F6CAA2D10C /* RegistCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12577FDF47C162A8EB568276 /* RegistCache.swift */; };
-		12577B5DD3E60701F20750A7 /* MyUIUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125777ADA8A418586BC1B08F /* MyUIUtil.swift */; };
 		12577C00F50EAEB9D3337083 /* MyRandomDataUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125772C0AC971B8AEAFA33A0 /* MyRandomDataUtil.swift */; };
 		12577D92BD31CB8D546E4E5C /* MyLogUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1257725F50C5796404D3DB23 /* MyLogUtil.swift */; };
 		12577DD6A56B3E90AA1A07E1 /* MyEncryptUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12577C8BB90E8EB11904D612 /* MyEncryptUtil.swift */; };
@@ -41,12 +39,10 @@
 		1257752A8A611079F1305034 /* MyTimerUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTimerUtil.swift; sourceTree = "<group>"; };
 		125776169334D52A5198699A /* MyColorUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyColorUtil.swift; sourceTree = "<group>"; };
 		125777827122C8107564BE4A /* MyCacheUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCacheUtil.swift; sourceTree = "<group>"; };
-		125777ADA8A418586BC1B08F /* MyUIUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyUIUtil.swift; sourceTree = "<group>"; };
 		125778098E98345C78061985 /* ApiResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiResult.swift; sourceTree = "<group>"; };
 		125778A94A3B96A466B2FD9B /* MyRequestUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyRequestUtil.swift; sourceTree = "<group>"; };
 		12577989E971F2CA07548578 /* HttpUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpUtil.swift; sourceTree = "<group>"; };
 		12577C8BB90E8EB11904D612 /* MyEncryptUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyEncryptUtil.swift; sourceTree = "<group>"; };
-		12577D1851949D1E2E60D9BE /* MyEnvUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyEnvUtil.swift; sourceTree = "<group>"; };
 		12577D3BD570910A0208A3C0 /* MyDataUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDataUtil.swift; sourceTree = "<group>"; };
 		12577D3EBF18C1A283D95D9C /* MyJsonUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyJsonUtil.swift; sourceTree = "<group>"; };
 		12577D870F24FE18D9639111 /* MyStringUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStringUtil.swift; sourceTree = "<group>"; };
@@ -107,8 +103,6 @@
 		12577B62EF45F9E8115E8B02 /* util */ = {
 			isa = PBXGroup;
 			children = (
-				125777ADA8A418586BC1B08F /* MyUIUtil.swift */,
-				12577D1851949D1E2E60D9BE /* MyEnvUtil.swift */,
 				1257725F50C5796404D3DB23 /* MyLogUtil.swift */,
 				12577D3BD570910A0208A3C0 /* MyDataUtil.swift */,
 				12577EFD0ECC86B07651AE3E /* MyDateUtil.swift */,
@@ -301,8 +295,6 @@
 				125779EBDCFFD90C8CD6CFCF /* BmobApi.swift in Sources */,
 				125776DDDF342BE7484D2BCB /* HttpUtil.swift in Sources */,
 				125772F7B3419FC1C7229866 /* ApiResult.swift in Sources */,
-				12577B5DD3E60701F20750A7 /* MyUIUtil.swift in Sources */,
-				12577632FF454E7A231C4E4F /* MyEnvUtil.swift in Sources */,
 				12577D92BD31CB8D546E4E5C /* MyLogUtil.swift in Sources */,
 				12577FA4FDB4B4DE9B4FC242 /* MyDataUtil.swift in Sources */,
 				12577350973E576A2853662E /* MyDateUtil.swift in Sources */,

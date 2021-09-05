@@ -6,6 +6,6 @@ target 'qzlib' do
   use_frameworks!
 
   # Pods for qzlib
-  pod 'QzUI', :path => '/Users/qiangzi/Work/2021/ios/lib/qzui'
+  pod 'QzLib', :path => '/Users/qiangzi/Work/2021/ios/lib/qzlib'
 
 end
