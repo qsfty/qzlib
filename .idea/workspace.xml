@@ -3,33 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="50a7d97c-9fd5-4c6c-b6e3-5a6bccd046bd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lib/util/MyEnvUtil.swift" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lib/util/MyUIUtil.swift" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Podfile" beforeDir="false" afterPath="$PROJECT_DIR$/Podfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Podfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Manifest.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Manifest.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/qiangzi.xcuserdatad/xcschemes/QzUI.xcscheme" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/qiangzi.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/qiangzi.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-qzlib/Pods-qzlib-acknowledgements.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-qzlib/Pods-qzlib-acknowledgements.markdown" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-qzlib/Pods-qzlib-acknowledgements.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-qzlib/Pods-qzlib-acknowledgements.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-qzlib/Pods-qzlib-frameworks-Debug-input-files.xcfilelist" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-qzlib/Pods-qzlib-frameworks-Debug-input-files.xcfilelist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-qzlib/Pods-qzlib-frameworks-Debug-output-files.xcfilelist" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-qzlib/Pods-qzlib-frameworks-Debug-output-files.xcfilelist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-qzlib/Pods-qzlib-frameworks-Release-input-files.xcfilelist" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-qzlib/Pods-qzlib-frameworks-Release-input-files.xcfilelist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-qzlib/Pods-qzlib-frameworks-Release-output-files.xcfilelist" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-qzlib/Pods-qzlib-frameworks-Release-output-files.xcfilelist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-qzlib/Pods-qzlib-frameworks.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-qzlib/Pods-qzlib-frameworks.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-qzlib/Pods-qzlib.debug.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-qzlib/Pods-qzlib.debug.xcconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-qzlib/Pods-qzlib.release.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-qzlib/Pods-qzlib.release.xcconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/QzUI/QzUI-Info.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/QzUI/QzUI-dummy.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/QzUI/QzUI-prefix.pch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/QzUI/QzUI-umbrella.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/QzUI/QzUI.debug.xcconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/QzUI/QzUI.modulemap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/QzUI/QzUI.release.xcconfig" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/QzLib.podspec" beforeDir="false" afterPath="$PROJECT_DIR$/QzLib.podspec" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.sh" beforeDir="false" afterPath="$PROJECT_DIR$/build.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qzlib.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/qzlib.xcodeproj/project.pbxproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/qzlib.xcodeproj/project.xcworkspace/xcuserdata/qiangzi.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/qzlib.xcodeproj/project.xcworkspace/xcuserdata/qiangzi.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,7 +70,7 @@
       <updated>1630824460913</updated>
       <workItem from="1630824462118" duration="50000" />
       <workItem from="1630824536090" duration="749000" />
-      <workItem from="1630825322734" duration="3473000" />
+      <workItem from="1630825322734" duration="4813000" />
     </task>
     <servers />
   </component>
