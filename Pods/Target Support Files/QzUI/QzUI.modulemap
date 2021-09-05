@@ -1,0 +1,6 @@
+framework module QzUI {
+  umbrella header "QzUI-umbrella.h"
+
+  export *
+  module * { export * }
+}
