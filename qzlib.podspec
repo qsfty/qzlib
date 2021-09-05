@@ -30,7 +30,8 @@ a lot of help utils
   }
 
   s.weak_frameworks = 'SwiftUI', 'Combine'
-
+  s.dependency 'Alamofire', '~> 5.4.1'
+  s.dependency 'CleanJSON', '~> 1.0.8'
 
   s.swift_version = '5.2'
 end

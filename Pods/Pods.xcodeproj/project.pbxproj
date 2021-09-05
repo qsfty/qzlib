@@ -254,7 +254,6 @@
 		E1B1C1A5373D82E4AF8592C688C4358F /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
 		E2BB5BC4A30643E04FF689385070ED19 /* URLConvertible+URLRequestConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLConvertible+URLRequestConvertible.swift"; path = "Source/URLConvertible+URLRequestConvertible.swift"; sourceTree = "<group>"; };
 		E3182168416310A1B721E21C0043D615 /* color.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = color.swift; sourceTree = "<group>"; };
-		E4A80E04917E7DE8B8753FA9109C4F34 /* QzLib.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = file.podspec; path = QzLib.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E5A67D39C8B568378E078FE64189390B /* AlamofireExtended.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlamofireExtended.swift; path = Source/AlamofireExtended.swift; sourceTree = "<group>"; };
 		EA2C4FDFCB4B3AE69FC8FC9141B69BC7 /* CleanJSONKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CleanJSONKey.swift; path = Sources/CleanJSON/CleanJSONKey.swift; sourceTree = "<group>"; };
 		EA91BBEB55CDABB8EEAB84E0C65361F4 /* Pods-qzlib-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-qzlib-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -353,7 +352,6 @@
 			isa = PBXGroup;
 			children = (
 				F77218B004ECF3F27380D3FC649DB2CF /* LICENSE */,
-				E4A80E04917E7DE8B8753FA9109C4F34 /* QzLib.podspec */,
 			);
 			name = Pod;
 			sourceTree = "<group>";

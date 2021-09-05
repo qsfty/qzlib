@@ -7,4 +7,4 @@ git push
 git tag 1.0.0
 git push --tags
 
-#pod trunk push QzLib.podspec --allow-warnings
+pod trunk push qzlib.podspec --allow-warnings
