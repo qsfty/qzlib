@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50a7d97c-9fd5-4c6c-b6e3-5a6bccd046bd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/qzlib.xcodeproj/project.xcworkspace/xcuserdata/qiangzi.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/qzlib.xcodeproj/project.xcworkspace/xcuserdata/qiangzi.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +58,7 @@
       <updated>1630824460913</updated>
       <workItem from="1630824462118" duration="50000" />
       <workItem from="1630824536090" duration="749000" />
-      <workItem from="1630825322734" duration="518000" />
+      <workItem from="1630825322734" duration="728000" />
     </task>
     <servers />
   </component>
