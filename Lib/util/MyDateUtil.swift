@@ -9,19 +9,47 @@ public let weekmap = [2: "周一", 3: "周二", 4: "周三", 5: "周四", 6: "�
 public let weekgap = [2: 0, 3: 1, 4: 2, 5: 3, 6: 4, 7: 5, 1: 6]
 
 
+public struct VacationConfig: Codable {
+    public var adjustVacation: Bool = false
+    public var adjustWork: Bool = false
+    public var vacationName: String = ""
+    public var fromDate: String = ""
 
-public struct WeekInfo {
+    public init() {
 
-    public var idx: Int
-    public var weekday: String
-    public var day: String
-    public var today: Bool
+    }
 
-    public init(idx: Int, weekday: String, day: String, today: Bool) {
+    public init(vacationName: String) {
+        self.adjustVacation = true
+        self.vacationName = vacationName
+    }
+
+    public init(vacationName: String, fromDate: String) {
+        self.adjustWork = true
+        self.vacationName = vacationName
+        self.fromDate = fromDate
+    }
+}
+
+public struct WeekInfo: Codable {
+
+    public var idx: Int = 0
+    public var weekday: String = ""
+    public var day: String = ""
+    public var today: Bool = false
+    public var date: String = ""
+    public var vacationConfig: VacationConfig = VacationConfig()
+
+    public init(){
+
+    }
+
+    public init(idx: Int, weekday: String, day: String, today: Bool, date: String) {
         self.idx = idx
         self.weekday = weekday
         self.day = day
         self.today = today
+        self.date = date
     }
 }
 
@@ -114,17 +142,44 @@ public struct MyDateUtil {
     public static func getYesterday() -> Date{
         gap(Date(), unit: .day, number: -1)
     }
-    //当期第几周
+    //第几周
     public static func getWeekOfYear(_ date: Date) -> Int {
         Calendar.current.component(.weekOfYear, from: date)
     }
-    //当期星期几
+    //星期几
     public static func getWeekday(_ date: Date) -> Int {
-//        let cal = Calendar.current
-//        let dc = cal.dateComponents([.weekday], from: date)
-//        return dc.weekday!
         let c = Calendar.current
         return c.component(.weekday, from: date)
+    }
+
+    //星期几
+    public static func getWeekdayIndex(_ date: Date) -> Int {
+        let c = Calendar.current
+        return c.component(.weekday, from: date)
+    }
+
+    //当前年
+    public static func getYear(_ date: Date) -> Int {
+        let c = Calendar.current
+        return c.component(.year, from: date)
+    }
+
+    //当前月
+    public static func getMonth(_ date: Date) -> Int {
+        let c = Calendar.current
+        return c.component(.month, from: date)
+    }
+
+    //当前日
+    public static func getDay(_ date: Date) -> Int {
+        let c = Calendar.current
+        return c.component(.day, from: date)
+    }
+
+
+    //间距
+    public static func getWeekdayGap(_ date: Date) -> Int {
+        weekgap[getWeekday(date)]!
     }
 
     //当期星期几
@@ -182,10 +237,20 @@ public struct MyDateUtil {
         getMilliTimeStamp(date1) > getMilliTimeStamp(target)
     }
 
+    public static func isAfterOrEqual(_ date1: Date, target: Date) -> Bool {
+        getMilliTimeStamp(date1) >= getMilliTimeStamp(target)
+    }
+
     //比较日期大小
     public static func isAfter(target: Date) -> Bool {
         isAfter(Date(), target: target)
     }
+
+    //比较日期大小
+    public static func isAfterOrEqual(target: Date) -> Bool {
+        isAfterOrEqual(Date(), target: target)
+    }
+
 
     //比较日期大小
     public static func isBefore(_ date1: Date,target: Date) -> Bool {
@@ -224,6 +289,17 @@ public struct MyDateUtil {
         return formatDate(date)
     }
 
+    //判断某个日期是否在某个区间范围内
+    public static func isBetween(_ date: String, beginDate: String, endDate: String) -> Bool {
+        if(beginDate == "" || endDate == "" || date == ""){
+            return false
+        }
+        let d1 = MyDateUtil.parseDate(date)!
+        let d2 = MyDateUtil.parseDate(beginDate)!
+        let d3 = MyDateUtil.parseDate(endDate)!
+        return isAfterOrEqual(d1, target: d2) && isAfterOrEqual(d3, target: d1)
+    }
+
     //清空时间
     public static func clearTime(_ date: Date) -> Date {
         return Calendar.current.date(bySettingHour: 0, minute: 0, second: 0, of: date)!
@@ -235,6 +311,16 @@ public struct MyDateUtil {
         return clearTime(newDate)
     }
 
+    public static func getSecondsByTime(time: String) -> Int {
+        if(time.count != 5){
+            return 0
+        }
+        return time.slice(begin: 0,end: 2).toInt() * 60 + time.slice(begin: 3).toInt()
+    }
+
+    public static func isTimeAfter(_ time1: String, time2: String) -> Bool {
+        getSecondsByTime(time: time1) > getSecondsByTime(time: time2)
+    }
 
     public static func isGreaterThanNow(date: String) -> Bool {
         var nowDay = formatNowDate()
@@ -374,11 +460,13 @@ public struct MyDateUtil {
         let today = formatNowDate()
         for i in 0..<7{
             let mydate = gap(monday, unit: .day, number: i)
+
             result.append(
                     WeekInfo(idx: i,
                             weekday: weekmap[getWeekday(mydate)]!,
                             day: format(mydate, format: "MM-dd"),
-                            today: format(mydate, format: "yyyy-MM-dd") == today
+                            today: format(mydate, format: "yyyy-MM-dd") == today,
+                            date: format(mydate, format: "yyyy-MM-dd")
                     )
             )
         }

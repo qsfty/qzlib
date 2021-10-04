@@ -13,6 +13,10 @@ public class MyTimerUtil {
         }
     }
 
+    public static func  quick(complete: @escaping () -> Void) -> Timer{
+        sleep(0.02, complete: complete)
+    }
+
     public static func  after(complete: @escaping () -> Void) -> Timer{
         sleep(0.1, complete: complete)
     }

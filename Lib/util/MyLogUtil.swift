@@ -15,8 +15,17 @@ public func ps(_ items: Any..., separator: String = " ", terminator: String = "\
     #endif
 }
 
+public func jsonPs<T:Codable>(data: T){
+    #if DEBUG
+    // This code will be run while installing from Xcode
+    print("【\(MyDateUtil.formatNowTime()) APP LOG】")
+    print(MyJsonUtil.stringify(data: data))
+    print()
+    #endif
+}
+
 public func ps2(_ items: Any..., separator: String = " ", terminator: String = "\n"){
-    if(true){
+    if(false){
         #if DEBUG
         // This code will be run while installing from Xcode
         print("临时测试【\(MyDateUtil.formatNowTime()) APP LOG】")
