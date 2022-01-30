@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-qzlib/Pods-qzlib-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/CleanJSON/CleanJSON.framework
+${BUILT_PRODUCTS_DIR}/QzLib/QzLib.framework

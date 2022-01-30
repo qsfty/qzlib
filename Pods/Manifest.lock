@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (5.4.3)
+  - CleanJSON (1.0.9)
+  - QzLib (1.0.3):
+    - Alamofire (~> 5.4.1)
+    - CleanJSON (~> 1.0.8)
+
+DEPENDENCIES:
+  - QzLib
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - CleanJSON
+    - QzLib
+
+SPEC CHECKSUMS:
+  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  CleanJSON: 910a36465ce4829e264a902ccf6d1455fdd9f980
+  QzLib: c9397706bafc7f0b4477c46a419ae36566607e95
+
+PODFILE CHECKSUM: 89679a09689db29ea63bb848093b9e07f1def6d9
+
+COCOAPODS: 1.8.4

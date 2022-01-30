@@ -1,0 +1,6 @@
+framework module Pods_qzlib {
+  umbrella header "Pods-qzlib-umbrella.h"
+
+  export *
+  module * { export * }
+}
