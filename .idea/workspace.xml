@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="50a7d97c-9fd5-4c6c-b6e3-5a6bccd046bd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lib/util/MyDateUtil.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/util/MyDateUtil.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lib/util/MyNumberUtil.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/util/MyNumberUtil.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lib/util/MyRandomDataUtil.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/util/MyRandomDataUtil.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lib/util/MyStringUtil.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/util/MyStringUtil.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lib/util/MyValidUtil.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Lib/util/MyValidUtil.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QzLib.podspec" beforeDir="false" afterPath="$PROJECT_DIR$/QzLib.podspec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.sh" beforeDir="false" afterPath="$PROJECT_DIR$/build.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qzlib.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/qzlib.xcodeproj/project.pbxproj" afterDir="false" />
-    </list>
+    <list default="true" id="50a7d97c-9fd5-4c6c-b6e3-5a6bccd046bd" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,7 +72,7 @@
       <workItem from="1630825322734" duration="5894000" />
       <workItem from="1630849148632" duration="2000" />
       <workItem from="1643544387776" duration="3257000" />
-      <workItem from="1644587368622" duration="76000" />
+      <workItem from="1644587368622" duration="377000" />
     </task>
     <servers />
   </component>
