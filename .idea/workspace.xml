@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50a7d97c-9fd5-4c6c-b6e3-5a6bccd046bd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QzLib.podspec" beforeDir="false" afterPath="$PROJECT_DIR$/QzLib.podspec" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.sh" beforeDir="false" afterPath="$PROJECT_DIR$/build.sh" afterDir="false" />
     </list>
@@ -82,7 +81,7 @@
       <workItem from="1630849148632" duration="2000" />
       <workItem from="1643544387776" duration="3257000" />
       <workItem from="1644587368622" duration="1080000" />
-      <workItem from="1644595093647" duration="191000" />
+      <workItem from="1644595093647" duration="313000" />
     </task>
     <servers />
   </component>

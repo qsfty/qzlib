@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'QzLib'
-  s.version          = '1.1.1'
+  s.version          = '1.1.2'
   s.summary          = 'SwiftUI Helper'
 
   s.description      = <<-DESC
