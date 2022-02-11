@@ -60,6 +60,38 @@ public struct WeekInfo: Codable {
 
 public struct MyDateUtil {
 
+    public static func splitYearMonth(_ data: String) -> [Int] {
+        let ts = MyArrayUtil.strSplit(data, splitter: "-")
+        if(ts.count == 2){
+            return [ts[0].toInt(), ts[1].toInt()]
+        }
+        return [-1, -1]
+    }
+
+    public static func joinYearMonth(_ year: Int, _ month: Int) -> String {
+        "\(year)-\(month)"
+    }
+
+    public static func getCurrentYear() -> Int {
+        let d = Date.init()
+        return Calendar.current.component(.year, from: d)
+    }
+
+    public static func getCurrentMonth() -> Int {
+        let d = Date.init()
+        return Calendar.current.component(.month, from: d)
+    }
+
+    public static func getCurrentDay() -> Int {
+        let d = Date.init()
+        return Calendar.current.component(.day, from: d)
+    }
+
+    public static func getCurrentWeek() -> Int {
+        let d = Date.init()
+        return Calendar.current.component(.weekday, from: d)
+    }
+
     public static func parseTimestamp(_ timestamp: Int) -> Date {
         Date.init(timeIntervalSince1970: TimeInterval(timestamp))
     }
@@ -85,8 +117,29 @@ public struct MyDateUtil {
         format(date, format: "yyyy-MM-dd")
     }
     //格式化时间
-    public static func formatTime(_ date: Date) -> String {
-        format(date, format: "HH:mm:ss")
+    public static func formatTime(_ date: Date? = nil) -> String {
+        var mydate: Date? = date
+        if(date == nil){
+            mydate = Date()
+        }
+        return format(mydate!, format: "HH:mm:ss")
+    }
+
+    public static func formatShortMonth(_ date: Date? = nil) -> String {
+        var mydate: Date? = date
+        if(date == nil){
+            mydate = Date()
+        }
+        return format(mydate!, format: "yyyy-MM")
+    }
+
+    //格式化时间
+    public static func formatShortTime(_ date: Date? = nil) -> String {
+        var mydate: Date? = date
+        if(date == nil){
+            mydate = Date()
+        }
+        return format(mydate!, format: "HH:mm")
     }
     //格式化日期时间
     public static func formatDateTime(_ date: Date) -> String {
@@ -168,22 +221,24 @@ public struct MyDateUtil {
 
     //当前年
     public static func getYear(_ date: Date) -> Int {
-        let c = Calendar.current
-        return c.component(.year, from: date)
+        getComponent(date, unit: .year)
     }
 
     //当前月
     public static func getMonth(_ date: Date) -> Int {
-        let c = Calendar.current
-        return c.component(.month, from: date)
+        getComponent(date, unit: .month)
     }
 
     //当前日
     public static func getDay(_ date: Date) -> Int {
-        let c = Calendar.current
-        return c.component(.day, from: date)
+        getComponent(date, unit: .day)
     }
 
+    //获取单位
+    public static func getComponent(_ date: Date, unit: Calendar.Component) -> Int {
+        let c = Calendar.current
+        return c.component(unit, from: date)
+    }
 
     //间距
     public static func getWeekdayGap(_ date: Date) -> Int {

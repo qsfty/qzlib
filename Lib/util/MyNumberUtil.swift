@@ -64,6 +64,9 @@ extension CGFloat {
 
 
 
+public func isFailed(_ msg: String) -> Bool{
+    msg != "ok"
+}
 
 extension Double {
 

@@ -14,6 +14,14 @@ public func randomNum(_ end: Int) -> Int {
     randomNum(0, end)
 }
 
+public func randomBoolean() -> Bool {
+    randomNum(0, 100) % 2 == 0
+}
+
+public func randomStringValue(_ v1: String, _ v2: String) -> String {
+    randomBoolean() ? v1 : v2
+}
+
 public func randString(_ len: Int) -> String {
     var str="abcdefghijklmnopqrstuvwxyz1234567890"
     var finalStr = ""

@@ -4,10 +4,10 @@
 
 import Foundation
 
-public struct MyValidUtil {
+public class MyValidUtil {
 
-    static func isPassword(password:String) -> Bool {
-        let passwordRule = "^[0-9A-Za-z@\\.\\*]{6,8}$"
+    public static func isPassword(password:String) -> Bool {
+        let passwordRule = "^[0-9A-Za-z]{6,8}$"
         let regexPassword = NSPredicate(format: "SELF MATCHES %@",passwordRule)
         if regexPassword.evaluate(with: password) == true {
             return true
